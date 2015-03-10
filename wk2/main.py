@@ -1,15 +1,13 @@
-
-from library import Student
-from library import Printer
-# import library
+from library import Student, Printer
 
 class MainHandler:
     def __init__(self):
-        Student.name = raw_input('Student name :')
-        Student.degree = raw_input('Student degree :')
-        Student.grades = raw_input('Student grades :')
+        print 'MainHandler initialized'
 
+        self.model = Student()
+        self.view = Printer()
 
-MainHandler()
-Printer(Student)
+        self.view.print_out()
+
+main = MainHandler()
 
