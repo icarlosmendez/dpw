@@ -92,6 +92,7 @@
 
 # verify vowels in a string
 #
+print 'This program will output a list of vowels contained in any word you enter.'
 word = raw_input("Type a word: ")
 def vowels(w):
     vowel_container = []
@@ -110,8 +111,7 @@ def vowels(w):
     if len(vowel_container) == 0:
         return 'There are no vowels in this word'
     else:
-        return vowel_container
-
+        return sorted(vowel_container)
 
 print vowels(word)
 
