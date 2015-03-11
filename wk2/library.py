@@ -1,19 +1,33 @@
 
 class Student:
-    print 'Student initialized'
     # initialize the constructor function
     def __init__(self):
+        print 'Student initialized'
+        self.make_student()
+
+
+    def make_student(self):
         # create a variable for new student
-        average = []
+        self.new_student = []
+        self.average = []
         # define the attributes
-        self.do = Student_DO()
+
         self.name = raw_input('Student name :')
         self.degree = raw_input('Student degree :')
-        self.grades = ['90, 80, 100']
-        self.average = self.avg()
+        self.grades = [90, 50, 100]
+        self.average = self.avg(self.grades)
+
+        self.new_student.append(self.name)
+        self.new_student.append(self.degree)
+        self.new_student.append(self.average)
+
+
+    def get_student_info(self):
+        return self.new_student
+
 
     # create a method to calculate average grade
-    def avg(self):
+    def avg(self, grades):
         # create a variable to hold the sum of all grades
         average = 0
         # iterate over list
@@ -23,28 +37,17 @@ class Student:
         # create another variable to assign the average to
         average = average/len(self.grades)
         # return new variable with average grade
+        # print "%s's average is " + str(average) % self.name
         return average
 
 
 class Printer:
-    print 'Printer initialized'
-
     # initialize Printer class constructor function
     def __init__(self):
-
-        # test function is working
-        print "Printer Class initialized"
+        print 'Printer initialized'
         self.data = None
+
 
     def print_out(self):
         # print individual attributes from Student class
         print self.data
-
-
-class Student_DO:
-    def __init__(self):
-        print 'Data Object created'
-        self.name = ''
-        self.degree = ''
-        self.grades = []
-        self.average = ''

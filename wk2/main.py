@@ -4,10 +4,11 @@ class MainHandler:
     def __init__(self):
         print 'MainHandler initialized'
 
-        self.model = Student()
-        self.view = Printer()
-
-        self.view.print_out()
+        model = Student()
+        view = Printer()
+        data = model.get_student_info()
+        view.data = data
+        view.print_out()
 
 main = MainHandler()
 
