@@ -12,9 +12,12 @@ class Student:
         self.average = []
         # define the attributes
 
-        self.name = raw_input('Student name :')
-        self.degree = raw_input('Student degree :')
-        self.grades = [90, 50, 100]
+        self.name = raw_input('Student name: ')
+        self.degree = raw_input('Student degree: ')
+        # self.grades = [90, 50, 100]
+        self.grades = []
+        for i in range(1, 4):
+            self.grades.append(raw_input('Enter a grade: '))
         self.average = self.avg(self.grades)
 
         self.new_student.append(self.name)
@@ -33,7 +36,7 @@ class Student:
         # iterate over list
         for i in self.grades:
             # add each new index value to variable
-            average += i
+            average += int(i)
         # create another variable to assign the average to
         average = average/len(self.grades)
         # return new variable with average grade
@@ -50,4 +53,4 @@ class Printer:
 
     def print_out(self):
         # print individual attributes from Student class
-        print self.data
+        print '%s who is enrolled in %s degree program has a GPA of %s.' % (self.data[0], self.data[1], self.data[2])
