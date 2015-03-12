@@ -8,9 +8,12 @@ class Controller:
         # define the variable view as Printer class function call
         view = Printer()
 
-        # data receives the results of the make_student function
+        # Bring the output of the Student class back into the controller
+        # This allows us to then send it to the Printer class
+        # 'data' receives the results of the make_student function
         # the variable new_student is returned by get_student_data
         data = model.get_student_data()
+
         # assign the value 'data' in the Printer class
         # the results of get_student_data()
         view.data = data

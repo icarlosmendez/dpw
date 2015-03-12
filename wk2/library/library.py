@@ -41,10 +41,10 @@ class Student:
         average = 0
         # iterate over list
         for i in self.grades:
-            # add each new index value to variable average
-            # convert i to an integer each time before adding to average
+            # add each new index value to variable 'average'
+            # convert i to an integer each time before adding to 'average'
             average += int(i)
-        # calculate the average and reassign new value to variable average
+        # calculate the average and reassign new value to variable 'average'
         average = average/len(self.grades)
         # return new variable with average grade
         return average
@@ -53,13 +53,13 @@ class Student:
 class Printer:
     # initialize Printer class constructor function
     def __init__(self):
-        # data is a variable created in the controller
-        # data is the culmination of make_student and get_student_data
-        # establishing the variable of data provides a location for
-        # the values from new_student to be passed into the Printer class
+        # 'data' is a variable created in the controller
+        # 'data' is the culmination of make_student() and get_student_data()
+        # establishing the variable 'data' provides a location for
+        # the values from 'new_student' to be passed into the Printer class via the controller
         self.data = None
 
 
     def print_out(self):
-        # print individual attributes from variable new_student
+        # print individual attributes from variable 'new_student' now known as 'data'
         print '%s who is enrolled in the %s degree program has earned a GPA of %s.' % (self.data[0], self.data[1], self.data[2])
