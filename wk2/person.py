@@ -13,29 +13,43 @@ class Person:
 class Student(Person):
     def learn(self):
         self.learn = ''
-        print self.name + ' is learning '
 
     def attend(self):
-        print self.name + ' is attending'
+        self.college = ''
 
     def talk(self):
-        super(language())
-        print 'I LOVE PYTHON!'
-
-stud1 = Student()
-stud1.name = 'Bob'
-stud1.learn = 'Web Design'
-stud1.language = 'Spanish'
-
-stud2 = Student()
-stud2.name = 'Joe'
-stud2.learn = 'Web Development'
-stud2.language = 'French'
+        self.language = ''
 
 
-stud1.learn()
-stud1.attend()
+class Freshman(Student):
+    def student(self):
+        print self.name + ' speaks ' + self.language
+        print self.name + ' is studying ' + self.learn + ' at ' + self.college
 
-# stud2 = Student
-# stud2.learn(Student)
 
+
+
+
+def Bob(self):
+    self.name = 'Bob'
+    self.learn = 'Web Design'
+    self.college = 'Full Sail'
+    self.language = 'Spanish'
+
+
+f = Freshman()
+print f
+
+# stud2 = Student()
+# stud2.name = 'Joe'
+# stud2.learn = 'Web Development'
+# stud2.language = 'French'
+
+
+
+
+# stud = Person()
+
+
+# Person()
+# Student()

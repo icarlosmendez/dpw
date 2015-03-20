@@ -1,0 +1,450 @@
+/* Default Styles */
+/*
+/*
+/* 	Purple 			: Hex #72637d
+/* 	Burnt Orange 	: Hex #db9030
+/* 	Golden Sand		: Hex #ffb501
+/* 	Aqua Marine 	: Hex #4fc8ed
+/* 	Turquoise 		: Hex #73e5d0
+/* 	Dark Gray 		: Hex #555
+/*
+/* 	font-family: 'Source Sans Pro', sans-serif;
+/* 	font-family: 'Montserrat', sans-serif;
+/* 	font-family: 'Roboto Slab', serif;
+/*
+*/
+
+/* Layout Styles */
+
+body {
+	width: 100%;
+}
+.colorTabs {
+	width: 40px;
+	height: 100%;
+	margin: 0 0 .25rem;
+	background-image: url("../img/carib_color_tabs_42x774.jpg");
+	background-repeat: repeat-y;
+	position: fixed;
+		top: 0;
+		z-index: -1;
+}
+.wrapper {
+	width: 96%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.formWrap{
+	width: 96%;
+	max-width: 900px;
+	margin: .5rem auto;
+	border-radius: .5rem;
+	position: relative;
+		left: 0;
+}
+fieldset { /* The white elements which hold the form fields */
+	max-width: 97%;
+	margin: .5rem auto;
+	padding: .5rem;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;
+	border-top: 1px solid #999;
+	background-color: #fff;
+	overflow: hidden;
+}
+.fieldWrap { /* The floating gray panel that holds the form */
+	width: 94%;
+	margin: .5rem auto;
+	padding: .25rem;
+	border-left: 1px solid #bbb;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #fff;
+	background-color: #eee;
+	box-shadow: .25rem .25rem .5rem #ccc;
+	overflow: hidden;
+}
+.group:before, .group:after { 
+	content: "\0020"; 
+	display: block; 
+	height: 0; 
+	overflow: hidden; 
+	}  
+	.group:after { 
+		clear: both; 
+		}
+#company, #primary, #secondary {
+	width: 32%;
+	margin: 0 auto;
+	padding: 0 .25rem;
+}
+#submit {
+	max-width: 97%;
+	margin: .5rem auto;
+	padding: .5rem;
+	overflow: hidden;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.twoUp {
+	width: 50%;
+	float: left;
+}
+
+
+/* Header Styles */
+
+header {
+	width: 100%;
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.hide-text { /* The Kellum Method of image replacement */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left; /* The float is mine to keep the h1 from pushing my logo down */
+}
+.logo {
+	width: 200px;
+	height: 50px;
+	margin-top: 1rem;
+	background-image: url("../img/carib_logo.svg");	
+	position: relative;
+		left: 14px;
+}
+.logoWrap {
+	width: 94%;
+	max-width: 900px;
+	margin: .5rem auto;
+	border-radius: .5rem;
+	position: relative;
+		left: 14px;
+}
+
+
+/* Text Reset */
+
+h1, h2, h3, h4, p, label, legend {
+	padding: 0;
+	margin: 0;
+}
+
+/* Text Styles */
+
+h1 {
+	font: 3rem/1.5 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+h2 {
+	font: 2.5rem/1.5 'Montserrat', sans-serif;
+	color: #72637d;
+}
+h3 {
+	font: 2rem/1.5 'Montserrat', sans-serif;
+	color: #db9030;
+	text-shadow: -.075rem 0 #fff;
+	}
+	form h3 {
+		margin: 2rem 0 0 2rem;
+	}
+h4 {
+	font: 1.5rem/1.5 'Montserrat', sans-serif;
+	color: #72637d;
+	margin-top: 1rem;
+}
+p {
+	font: 1rem/1.25 'Source Sans Pro', sans-serif;
+	color: #555;
+}
+label {
+	display: block;
+	font: 1rem/1.25 'Roboto Slab', sans-serif;
+	color: #555;
+}
+
+/* Input Reset */
+
+input[type="text"],  
+ input[type="submit"], 
+  input[type="email"], 
+   input[type="tel"], 
+    input[type="date"], 
+     textarea, 
+      button, 
+       select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			border: 1px solid #bbb;
+			background: none;
+			outline: none;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			padding: 0;
+			margin: 0;
+}		
+
+/* Input Styles */
+
+input, textarea, select, button {
+	display: block;
+	margin: .5rem 0;
+}
+input[type="text"],  
+ input[type="submit"], 
+  input[type="email"], 
+   input[type="tel"], 
+    input[type="date"], 
+     textarea {
+     	width: 90%;
+     	margin: .25rem 0 .5rem;
+     	padding: .25rem;
+     	color: #555;
+     	font: 1.1rem/1.25 'Source Sans Pro', sans-serif;
+		font-variant: small-caps;
+	 	background-image: url("../img/inputfield.jpg");
+	 	background-repeat: repeat-x;
+	 	transition-property: box-shadow, border;
+ 	 	transition-duration: 1s;
+  		transition-timing-function: ease-in-out;
+  		transition: all 1s ease-in-out; 
+}
+/* this rule sets the width to 99 +/- vs 90 % as above so do not change the order */
+/* it also provides more top margin to keep the explanatory text off the top edge */
+textarea { 
+	width: 98.75%;
+	height: 100%;
+	margin-top: .5rem;
+}
+/*input[type="text"],  
+ input[type="submit"], 
+  input[type="email"], 
+   input[type="tel"], 
+    input[type="date"], 
+     textarea {
+     	color: #555;
+     	font: 1.1rem/1.25 'Source Sans Pro', sans-serif;
+		font-variant: small-caps;
+}*/
+input[type="text"]:focus,  
+ input[type="submit"]:focus, 
+  input[type="email"]:focus, 
+   input[type="tel"]:focus, 
+    input[type="date"]:focus, 
+     textarea:focus,
+      select:focus {
+     		box-shadow: 0 0 .5rem #db9030;
+     		border: 1px solid #ffb501;
+     		transform: rotateX(360deg);
+}
+input[type="radio"]:focus {
+	box-shadow: 0 0 .5rem #db9030; 		
+}
+select {
+	width: 94%;
+	padding: .5rem;
+	margin: .25rem 0 .5rem;
+	border-radius: .25rem;
+	background: rgb(252,252,252); /* Old browsers */
+	background: -moz-linear-gradient(top,  
+		rgba(252,252,252,1) 0%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, 
+		color-stop(0%,rgba(135,224,253,1)), color-stop(100%,rgba(5,171,224,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  
+		rgba(252,252,252,1) 0%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  
+		rgba(252,252,252,1) 0%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  
+		rgba(252,252,252,1) 0%,rgba(221,221,221,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  
+		rgba(252,252,252,1) 0%,rgba(221,221,221,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( 
+		startColorstr='#fcfcfc', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+input[type="submit"] {
+	width: 50%;
+	font: 1.25rem/1.25 'Roboto Slab', sans-serif;
+	font-variant:  small-caps;
+	color: #555;
+	padding: .5rem;
+	margin: .25rem -.5rem .5rem 0;
+	border-radius: .25rem;
+	background: rgb(187,187,187); /* Old browsers */
+	background: -moz-linear-gradient(top,  
+		rgba(252,252,252,1) 0%, rgba(187,187,187,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, 
+		color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(187,187,187,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  
+		rgba(252,252,252,1) 0%,rgba(187,187,187,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  
+		rgba(252,252,252,1) 0%,rgba(187,187,187,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  
+		rgba(252,252,252,1) 0%,rgba(187,187,187,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  
+		rgba(252,252,252,1) 0%,rgba(187,187,187,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( 
+		startColorstr='#fcfcfc', endColorstr='#73e5d0',GradientType=0 ); /* IE6-9 */
+}
+input.icon {
+	background: url("../img/calendar_icon_20x20.svg") no-repeat 96% 5px;  
+}
+
+
+/* Range Slider Styles */
+
+input[type="range"] {
+	width: 90%;
+ 	margin: 1.7rem 0 0;
+ 	padding: .25rem;
+}
+
+
+/* List Reset */
+
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+/* List Styles */
+
+li {
+	font: .9rem/1 'Roboto Slab', sans-serif;
+	list-style-type: none;
+	/*display: inline;*/
+}
+input[type="radio"] {
+	margin-right: .5rem;
+	display: inline;
+}
+.inline {
+	margin-right: .5rem;
+	display: inline;
+}
+.block {
+	display: block;
+}
+/* Footer Styles */
+
+footer {
+	height: 50px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+	#company, #primary, #secondary {
+		width: 100%;
+		max-width: 900px;
+		clear: left;
+	}
+	input[type="text"],  
+	 input[type="submit"], 
+	  input[type="email"], 
+	   input[type="tel"], 
+	    input[type="date"], 
+	     textarea {
+	     	width: 97.5%;
+	}
+	select {
+	     	width: 98.8%;
+	}
+	#submit {
+	max-width: 100%;
+	}
+	input[type="submit"] {
+	width: 100%;
+	}
+	textarea { 
+	width: 98.5%;
+	height: 100%;
+	margin-top: .5rem;
+	}
+	input[type="range"] {
+	width: 97.5%;
+ 	margin: 1.7rem 0 0;
+ 	padding: .25rem;
+	}
+	.twoUp {
+	width: 100%;
+	clear: left;
+	}
+	input.icon {
+	background: url("../img/calendar_icon_20x20.svg") no-repeat 99% 5px;  
+	}
+}
+
+
+@media only screen and (max-width: 640px) {
+	input[type="text"],  
+	 input[type="submit"], 
+	  input[type="email"], 
+	   input[type="tel"], 
+	    input[type="date"], 
+	     textarea {
+	     	width: 96.5%;
+	}
+	select {
+	     	width: 98.5%;
+	}
+	#submit {
+	max-width: 100%;
+	}
+	input[type="submit"] {
+	width: 100%;
+	}
+	textarea { 
+	width: 98.25%;
+	height: 100%;
+	margin-top: .5rem;
+	}
+	input.icon {
+	background: url("../img/calendar_icon_20x20.svg") no-repeat 98% 5px;  
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	h3 {
+		font-size: 1.75rem;
+	}
+	h4 {
+		font-size: 1.25rem;
+	}
+	input[type="text"],  
+	 input[type="submit"], 
+	  input[type="email"], 
+	   input[type="tel"], 
+	    input[type="date"], 
+	     textarea {
+	     	width: 95.5%;
+	     	font: 1.25rem/1.25 'Source Sans Pro', sans-serif;
+	     	font-variant: small-caps;
+	}
+	select {
+	     	width: 98%;
+	}
+	input[type="submit"] {
+	width: 100%;
+	
+	}
+	textarea { 
+	width: 97.5%;
+	height: 100%;
+	margin-top: .5rem;
+	}
+	input[type="range"] {
+	width: 95.5%;
+ 	margin: 1.7rem 0 0;
+ 	padding: .25rem;
+	}
+}

@@ -17,7 +17,7 @@ class Student:
         # then with a for range loop we accept 3 inputs
         # appending each to the 'grades' list
         # input =
-        for i in range(1, 4):
+        for i in range(0, 3):
             self.do.grades.append(raw_input('Enter a grade: '))
 
         # average uses the grades variable to output the GPA

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Customer Survey</title>
+<meta name="Description" content="">
+<meta name="Keywords" content="Client Survey">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui-1.11.0.custom/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui-1.11.0.custom/jquery-ui.structure.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui-1.11.0.custom/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700|Roboto+Slab' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="colorTabs"></div><!-- /colorTabs -->
+	<div class="wrapper">
+
+		<header>
+			<h1 class="hide-text">Carib</h1>
+			<div class="logoWrap">
+				<div class="logo"></div>
+			</div>
+		</header>
+			<form class="formWrap" action="controller.py" method="get">
+				<fieldset class="fieldWrap"><!-- Master Fieldset -->
+					<h3>Contact Information</h3>
+					<fieldset>
+						<div id="company" class="left">
+						<h4>Your Company</h4>
+							<label>Company Name
+								<input type="text" name="companyName" tabindex="1" placeholder="please enter your company name"/></label>
+							<label>Current Or Desired URL
+								<input type="text" name="url" placeholder="yourcompany.tld"/></label>
+							<label>Anticipated Launch Date
+								<input type="text" name="launchDate" id="datepicker" class="icon" placeholder="click here to enter a date"/></label>
+							<label>How Cool Is Your Company
+								<input type="range" name="quantity" min="1" max="10" /></label>
+						</div>
+						<div id="primary" class="left">
+						<h4>Primary Contact</h4>
+							<label>Name
+								<input type="text" name="primaryName" placeholder="firstname lastname"/></label>
+							<label>Email
+								<input type="email" name="email" placeholder="you@yourcompany.tld"/></label>
+							<label>Phone
+								<input type="tel" name="phone" placeholder="(123)456-7890"/></label>
+							<label>Company Role
+								<select name="title">
+									<option value="role">Choose One</option>
+									<option value="role">Sole Proprietor</option>
+									<option value="role">Partner</option>
+									<option value="role">CEO</option>
+									<option value="role">Producer</option>
+									<option value="role">Project Manager</option>
+									<option value="role">Creative Director</option>
+								</select></label>
+						</div>
+						<div id="secondary" class="left">
+						<h4>Secondary Contact</h4>
+							<label>Name
+								<input type="text" name="secondaryName" placeholder="firstname lastname"/></label>
+							<label>Email
+								<input type="email" name="email" placeholder="you@yourcompany.tld"/></label>
+							<label>Phone
+								<input type="tel" name="phone" placeholder="(123)456-7890"/></label>
+							<label>Company Role
+								<select name="title">
+									<option value="role">Choose One</option>
+									<option value="role">Sole Proprietor</option>
+									<option value="role">Partner</option>
+									<option value="role">CEO</option>
+									<option value="role">Producer</option>
+									<option value="role">Project Manager</option>
+									<option value="role">Creative Director</option>
+								</select></label>
+						</div>
+					</fieldset>
+
+					<div id="submit">
+						<input class="right" type="submit" value="submit" />
+					</div>
+				</fieldset><!-- /Master Fieldset -->
+			</form><!-- /formWrap -->
+		</div><!-- /wrapper -->
+	<footer>
+		
+	</footer>
+
+<!-- Java Script -->
+
+	<!-- jQuery -->
+	<script src="../../../Designing for Web Standards II/Week 3/client_survey_form/js/jquery-1.11.1.js"></script>
+	<!-- required plugins -->
+	<script src="../../../Designing for Web Standards II/Week 3/client_survey_form/jquery-ui-1.11.0.custom/jquery-ui.min.js"></script>
+	<!-- other js -->
+	<script src="../../../Designing for Web Standards II/Week 3/client_survey_form/js/form.js"></script>
+
+
+</body>
+</html>
