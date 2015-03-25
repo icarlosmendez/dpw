@@ -37,6 +37,7 @@ class Controller(webapp2.RequestHandler):
             secPhone = self.request.GET['secPhone']
             secRole = self.request.GET['secRole']
 
+            self.redirect('/output')
             self.response.write(companyName + url + launchDate + priName + priEmail + priPhone + priRole + secName + secEmail + secPhone + secRole)
 
         else:
