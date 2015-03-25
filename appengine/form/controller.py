@@ -1,14 +1,8 @@
 #!/usr/bin/env python
 
 import webapp2, os, jinja2
-from model import Model
-from view import View
-
-class Controller:
-    print '1: Controller initialized'
-    def __init__(self):
-        model = Model()
-        view = View()
+from data_model import Form
+from data_view import View
 
 
 jinja2_environment = jinja2.Environment(
@@ -18,23 +12,29 @@ jinja2_environment = jinja2.Environment(
             os.path.dirname(__file__))))
 
 
-class MainHandler(webapp2.RequestHandler):
+class Controller(webapp2.RequestHandler):
     print '2: MainHandler initialized'
     def get(self):
+
+        model = Form()
+        view = View()
 
         template_values = {
             'Welcome': 'Welcome to Carib'
         }
-        template = jinja2_environment.get_template('form.html')
+        self.template = jinja2_environment.get_template('form.html')
 
         self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(template.render(template_values))
+        self.response.write(self.template.render(template_values))
 
-        self.response.write(review(self, do)
+        self.response.write(self.template)
+        # self.response.write(view.review(model.do))
+        self.response.write(model.do)
+
 
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', Controller)
 ], debug=True)
 

@@ -31,7 +31,6 @@
         });
     }
 
-
     /* Date Picker by jQuery UI */
 
     $(function() {

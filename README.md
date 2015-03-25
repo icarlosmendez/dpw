@@ -3,7 +3,7 @@ Design Patterns for Web Programming
 
 GitHub repo for Scott's class.
 
-first assignment: Madlib using javaScript
+first assignment: Madlib using javaScript for review
 
 second assignment: Refactor Madlib using Python
 

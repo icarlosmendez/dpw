@@ -19,7 +19,7 @@ handlers:
 - url: /js
   static_dir: js
 
-- url: /.*
+- url: .*
   script: controller.app
 
 

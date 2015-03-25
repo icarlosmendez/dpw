@@ -244,7 +244,7 @@ input[type="text"]:focus,
       select:focus {
      		box-shadow: 0 0 .5rem #db9030;
      		border: 1px solid #ffb501;
-     		transform: rotateX(360deg);
+     		/*transform: rotateX(360deg);*/
 }
 input[type="radio"]:focus {
 	box-shadow: 0 0 .5rem #db9030; 		
