@@ -40,6 +40,9 @@ class F18Hornet(AircraftCarrier):
         self.max_speed = 0
         self._armaments = []
         self.__crew = []
+        self.afterburner = True
+        self.tail_hook = True
+
 
     def accelerates(self):
         pass
@@ -48,6 +51,9 @@ class F18Hornet(AircraftCarrier):
         pass
 
     def fights(self):
+        pass
+
+    def climb_rate(self):
         pass
 
 
@@ -59,6 +65,8 @@ class SH60SeaHawk(AircraftCarrier):
         self.max_speed = 0
         self._armaments = []
         self.__crew = []
+        self.sonar_dipper = True
+        self.wench = True
 
     def accelerates(self):
         pass
@@ -67,4 +75,7 @@ class SH60SeaHawk(AircraftCarrier):
         pass
 
     def fights(self):
+        pass
+
+    def hovers(self):
         pass

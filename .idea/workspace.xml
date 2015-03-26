@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68f12961-ab50-4677-b672-d74602048819" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wk4/inheritance_quiz.py" afterPath="$PROJECT_DIR$/wk4/inheritance_quiz.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appengine/getters-setters/main.py" afterPath="$PROJECT_DIR$/appengine/getters-setters/main.py" />
     </list>
     <ignored path="dpw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +42,8 @@
           <file leaf-file-name="inheritance_quiz.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wk4/inheritance_quiz.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.2266355" vertical-offset="0" max-vertical-offset="1140">
-                  <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.8948598" vertical-offset="434" max-vertical-offset="1290">
+                  <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -195,24 +194,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="appengine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dpw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dpw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appengine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="getters-setters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1012,8 +993,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wk4/inheritance_quiz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2266355" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8948598" vertical-offset="434" max-vertical-offset="1290">
+          <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
           <folding />
         </state>
       </provider>
