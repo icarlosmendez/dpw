@@ -23,6 +23,15 @@ class AircraftCarrier(object):
     def fights(self):
         pass
 
+    @property
+    def armaments(self):
+        return self._armaments
+
+    @armaments.setter
+    def armaments(self, new_armament):
+        self._armaments = new_armament
+
+
 
 class F18Hornet(AircraftCarrier):
     def __init__(self):
@@ -40,6 +49,7 @@ class F18Hornet(AircraftCarrier):
 
     def fights(self):
         pass
+
 
 
 class SH60SeaHawk(AircraftCarrier):

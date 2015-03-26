@@ -45,7 +45,7 @@ class Transcript(object):
 
     # the getter
     @property
-    def final_grade(self): # **
+    def final_grade(self):
 
         return self.__final_grade
 
