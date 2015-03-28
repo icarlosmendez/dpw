@@ -4,6 +4,7 @@
 # of primary importance is the initialization of the super class
 # in Python3 you pass in 'object' as an argument to Person
 # Person is inheriting from the generic 'object' uber-class
+# Sounds like the proto_ object in JavaScript
 
 
 class Person(object):

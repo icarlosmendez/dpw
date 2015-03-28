@@ -1,0 +1,10 @@
+html {
+    background-color: lightblue;
+}
+form {
+    display: block;
+}
+li {
+    list-style-type: none;
+    padding: .5rem;
+}
