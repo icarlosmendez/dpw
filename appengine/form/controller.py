@@ -1,28 +1,13 @@
 #!/usr/bin/env python
 
-import webapp2, os, jinja2
-
-
-jinja2_environment = jinja2.Environment(
-    autoescape = True,
-    loader = jinja2.FileSystemLoader(
-        os.path.join(
-            os.path.dirname(__file__))))
+import webapp2
+from form import Form
 
 
 class Controller(webapp2.RequestHandler):
-    print '1: Controller initialized'
     def get(self):
 
-        template_values = {
-            'Welcome': 'Welcome to Carib'
-        }
-        template = jinja2_environment.get_template('form.html')
-
-        self.response.headers['Content-Type'] = 'text/html'
-        self.response.write(template.render(template_values))
-        self.response.write(template)
-
+        form = Form()
 
         if self.request.GET:
             companyName = self.request.GET['companyName']
@@ -37,13 +22,33 @@ class Controller(webapp2.RequestHandler):
             secPhone = self.request.GET['secPhone']
             secRole = self.request.GET['secRole']
 
-            self.redirect('/output')
-            self.response.write(companyName + url + launchDate + priName + priEmail + priPhone + priRole + secName + secEmail + secPhone + secRole)
+            form.body = form.body.format(**locals())
 
-        else:
-            pass
-            self.response.write(template)
+            form.body = '''
+            <fieldset class="fieldWrap"><!-- Master Fieldset -->
+                <h3>Contact Information</h3>
+                <fieldset>
+                    <div id="company" class="left">
+                        <h4>Your Company</h4>
+                            <label>Company Name
+                                <h5>{companyName}</h5></label>
+                            <label>Current Or Desired URL
+                                <h5>{url}</h5></label>
+                            <label>Anticipated Launch Date
+                                <h5>{launchDate}</h5></label>
 
+                    </div>
+                </fieldset>
+            </fieldset>
+            '''
+
+        form.body = form.body.format(**locals())
+
+        # else:
+        #     form.body = ''
+
+        form.title = 'Contact Info'
+        self.response.write(form.print_out())
 
 
 app = webapp2.WSGIApplication([
